@@ -1,24 +1,39 @@
-🚀 Prática HTTP com Node.js + Express
-Servidor simples com Node.js + Express para praticar requisições HTTP usando GET (query params) e POST (body JSON).
+Aqui está seu conteúdo organizado em Markdown bonitinho 👇
 
-📁 Estrutura do projeto
+# 🚀 Prática HTTP com Node.js + Express
+
+Servidor simples com Node.js + Express para praticar requisições HTTP usando **GET (query params)** e **POST (body JSON)**.
+
+---
+
+## 📁 Estrutura do projeto
+
+
 pratica-http-express/
-├── server.js        # Servidor Express com rotas GET e POST
-├── package.json     # Dependências do projeto
-├── curl_tests.sh    # Script de testes com curl
+├── server.js # Servidor Express com rotas GET e POST
+├── package.json # Dependências do projeto
+├── curl_tests.sh # Script de testes com curl
 ├── .gitignore
 └── README.md
-▶️ Como rodar
-1. Instale as dependências
+
+
+---
+
+## ▶️ Como rodar
+
+### 1. Instale as dependências
+```bash
 npm install
 2. Inicie o servidor
 node server.js
+
 O terminal exibirá:
 
 ✅ Servidor rodando em http://localhost:3000
 🧪 Testando as rotas
 🔵 GET — com query param
 curl "http://localhost:3000/saudacao?nome=Luan"
+
 Resposta esperada:
 
 {
@@ -30,6 +45,7 @@ Resposta esperada:
 curl -X POST http://localhost:3000/saudacao \
   -H "Content-Type: application/json" \
   -d '{"nome":"Luan"}'
+
 Resposta esperada:
 
 {
